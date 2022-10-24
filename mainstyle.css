@@ -33,20 +33,20 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 .heading {
-    width: 40%;
+    width: 45%;
     padding-bottom: 20px;
 }
 
 .heading h1 {
-    font-size: 3em;
+    font-size: 4rem;
     color: #00274C;
     font-weight: bolder;
     border-bottom: 3px solid #00274C;
     padding-bottom: 5px;
+    margin: 15px;
 }
 
 .heading span {
@@ -62,11 +62,55 @@ body {
 .row {
     display: flex;
     flex-direction: column;
-    width: 32.5%;
+    flex-flow: column wrap;
 }
 
 img {
     width: 100%;
-    padding-bottom: 13px;
+    padding: 8px;
     border-radius: 20px;
+}
+
+.button {
+    margin: 5px;
+    background: #00274C;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.button a {
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.button a:hover {
+    color: #FFCB05;
+}
+
+@media only screen and (max-width: 769px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .heading {
+        width: 60%;
+        padding-bottom: 20px;
+    }
+
+    .heading h1 {
+        font-size: 1.75rem;
+        padding-bottom: 5px;
+        margin: 8px;
+    }
+
+    .button {
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .button a {
+        font-size: 0.5rem;
+    }
 }
