@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Inter');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+@keyframes gradientbackground {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    padding: 0;
+    background: linear-gradient(45deg, #FFFFFF, #00274C);
+    animation: gradientbackground 5s alternate infinite;
+    background-size: 400% 400%;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.heading {
+    width: 40%;
+    padding-bottom: 20px;
+}
+
+.heading h1 {
+    font-size: 3em;
+    color: #00274C;
+    font-weight: bolder;
+    border-bottom: 3px solid #00274C;
+    padding-bottom: 5px;
+}
+
+.heading span {
+    color: #FFCB05;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+img {
+    width: 100%;
+    padding-bottom: 13px;
+    border-radius: 20px;
+}
