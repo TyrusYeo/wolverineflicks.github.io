@@ -59,7 +59,7 @@ body {
     justify-content: space-between;
 }
 
-.row {
+.column {
     display: flex;
     flex-direction: column;
     flex-flow: column wrap;
